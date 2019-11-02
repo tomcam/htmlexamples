@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Universal web page framework</title>
+<style>
+html,body,footer,header{display:block;width:100%;height:auto;max-width:100%;}
+nav{display:block;width:100%;}
+nav,header,footer {height:auto;clear:both;width:100%;}
+nav {float:left;}
+article, aside {float:left;height:100%;overflow:auto;display:block;}
+article {width:75%}
+aside {width:25%;}
+article {clear:left;}
+
+html{font-size:16px;max-width:35em;font-family:sans-serif;margin-left:4em;}
+</style>
+</head>
+<body>
+<header><p>Tiny Standard Web Page Framework</p></header>
+<nav><a href='/'>Home</a> | <a href='/'>Contact</a></nav>
+<article>
+<h1>Universal web page framework</h1>
+<h2>In under 10 lines of CSS</h2>
+<p>This framework is a well-formed, search engine-compliant starting point for pages that include a header at the to of the page, a nav section immediately after, an article section, and a sidebar (using the <code>aside</code> tag.)</p>
+
+<p>While this example of the <code>aside</code> puts the sidebar on the right,
+just replace the <code>float:left;</code>  for the <code>article, aside</code>  rule
+with <code>float:right;</code> and replace the <code>article: {clear:left;}</code> 
+with <code>article: {clear:right;}</code>  rule to swap sidebar positions. </p> 
+</article>
+<aside>
+  <h2>What's happening next</h2>
+  <a href="#">Link 4</a>
+  <a href="#">Link 2</a>
+</aside>
+<footer><p>12819 SE 38th St<br/>Bellevue, WA 98006<br/>(425) 223-3279</footer>
+</body>
+</html>
